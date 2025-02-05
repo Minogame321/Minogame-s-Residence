@@ -56,14 +56,14 @@
             padding: 20px;
             margin: 20px;
             border-radius: 10px;
-            width: 40%;
-            min-width: 300px;
+            max-width: 600px; /* 最大幅を設定 */
+            flex: 1 1 45%; /* 横幅に合わせて伸縮可能に */
         }
         .footer {
             background-color: #3380c8;
             color: white;
-            padding: 10px; 
-            font-size:40px;
+            padding: 10px;
+            font-size: 40px;
             width: 100%;
         }
         .twitter-container {
@@ -85,6 +85,34 @@
         }
         strong {
             font-size: 24px; /* strong部分を少し大きく */
+        }
+
+        /* スマートフォンやタブレット用のスタイル */
+        @media (max-width: 768px) {
+            .navbar {
+                font-size: 40px; /* Navbarの文字サイズを小さく */
+            }
+
+            .profile, .twitter-container {
+                width: 80%; /* 幅を広げてレイアウトが狭くならないように */
+                min-width: 250px; /* 最小幅を設定 */
+            }
+
+            .content {
+                width: 95%; /* コンテンツ全体の幅を調整 */
+            }
+
+            h2 {
+                font-size: 35px; /* 見出しの文字サイズを小さく */
+            }
+
+            p {
+                font-size: 20px; /* 本文の文字サイズを小さく */
+            }
+
+            .footer {
+                font-size: 25px; /* フッターの文字サイズを調整 */
+            }
         }
     </style>
 </head>
