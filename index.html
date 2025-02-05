@@ -1,89 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
- <title>ミノガメの住処</title>
- <p style="color: white;">できるたけ拡大せず「PC版サイト」で見てね！</p>
- <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ミノガメの住処</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #3380c8;
+            width: 100%;
+        }
+        .header {
+            background: url('headimage.png') no-repeat center;
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 20px;
+            background-color: #3380c8;
+            color: white;
+            font-weight: bold;
+            width: 100%;
+            font-size: 60px; /* Navbarの文字サイズ */
+        }
+        .content {
+            background-color: #3380c8;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .profile, .twitter-container {
+            background-color: lightgreen;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            width: 40%;
+            min-width: 300px;
+        }
+        .footer {
+            background-color: #3380c8;
+            color: white;
+            padding: 10px; 
+            font-size:40px;
+            width: 100%;
+        }
+        .twitter-container {
+            padding: 20px;
+        }
+        #twitter {
+            width: 100%;
+        }
+        .twitter-timeline {
+            width: 100% !important;
+        }
+
+        /* ここから個別に大きくする */
+        h2 {
+            font-size: 50px; /* Profileのタイトルを大きく */
+        }
+        p {
+            font-size: 35px; /* 各プロフィールのテキストを大きく */
+        }
+        strong {
+            font-size: 24px; /* strong部分を少し大きく */
+        }
+    </style>
 </head>
-<body style="background-color: dodgerblue;">
- <header>
- <nav>
- <ul>
- <li><a href="#" style="color: white;">Home</a></li>
- <li><a href="#" style="color: white;">Portfolio</a></li>
- </ul>
- </nav>
- <h1 style="color: white;">ミノガメの住処</h1>
- </header>
- <main>
- <section id="profile-container">
- <section id="profile">
- <h2 style="color: black;">Profile</h2>
- <p style="color: black;">出身地：神奈川（川越）</p>
- <p style="color: black;">生年月日：2000-03-21</p>
- <p style="color: black;">大学：電気通信大学 情報学部</p>
- <p style="color: black;">X（旧Twitter）：<a href="https://openminogame.wixsite.com/prsminogame" style="color: black;">@prsminogame</a></p>
- <p style="color: black;">（旧）Twitter：<a href="https://twitter.com/prsminogame" style="color: black;">@prsminogame</a></p>
- <p style="color: black;">github：<a href="https://github.com/Minotarne321" style="color: black;">Minotarne</a></p>
- <p style="color: black;">経歴強化学習・ゲーム制作・ゲームプロ野球（Dc）・新日本プロレス等・・・</p>
- </section>
- <section id="twitter">
- <h2 style="color: white;">Twitter</h2>
-<a class="twitter-timeline" data-width="500" data-height="600" href="https://twitter.com/openminogame?ref_src=twsrc%5Etfw">Tweets by openminogame</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
- </section>
- </section>
+<body>
 
- <!-- CSSを追加 -->
- <style>
- #profile-container {
- display: flex;
- justify-content: center;
- align-items: center;
- width: 100%;
- }
-
- #profile {
- background-color: green;
- padding: 20px;
- margin: 20px;
- max-width: 500px;
- }
-
- #profile h2 {
- text-align: center;
- }
-
- #profile p {
- text-align: left;
- }
-
- #twitter {
- background-color: #1DA1F2;
- padding: 20px;
- margin: 20px;
- max-width: 500px;
- }
-
- #twitter h2 {
- text-align: center;
- }
-
- #twitter a {
- text-align: left;
- }
-
-@media (max-width: 1024px) {
- #profile-container {
- flex-direction: column;
- }
-
- #profile, #twitter {
- margin: 0 0 20px 0;
- }
-}
- </style>
-
- </main>
-
+    <div class="navbar">
+        <div>Home</div>
+        <div>Portfolio</div>
+    </div>
+    <div class="header">
+           </div>
+<div class="footer">安定してるので、できるだけ拡大せず「PC版サイト」で見てね！</div>
+    <div class="content">
+        <div class="profile">
+            <h2>Profile</h2>
+            <p><strong>出身：</strong>神奈川（川崎）</p>
+            <p><strong>生年月日：</strong>2000-03-21</p>
+            <p>電気通信大学大学院 情報学専攻</p>
+            <p>深層強化学習 / ゲーム制作 / ゲーム / プロ野球(De) / 新日本プロレス 等...</p>
+        </div>
+        <div class="twitter-container">
+            <h2>Twitter</h2>
+            <section id="twitter">
+                <a class="twitter-timeline" data-width="500" data-height="600" href="https://twitter.com/openminogame?ref_src=twsrc%5Etfw">Tweets by openminogame</a> 
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </section>
+        </div>
+    </div>
+    
 </body>
 </html>
