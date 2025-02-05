@@ -12,14 +12,16 @@
             background-color: #3380c8;
             width: 100%;
         }
-        .header {
-            background: url('headimage.png') no-repeat center;
-            background-size: cover;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+.header {
+    background: url('headimage.png') no-repeat center;
+    background-size: contain; /* 画像が画面に収まるように調整 */
+    background-position: center; /* 画像を中央に配置 */
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
         .navbar {
             display: flex;
             justify-content: space-around;
