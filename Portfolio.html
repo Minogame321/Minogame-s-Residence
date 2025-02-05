@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ミノガメの住処</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #3380c8;
+            width: 100%;
+        }
+        .header {
+            background: url('headimage.png') no-repeat center;
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 20px;
+            background-color: #3380c8;
+            color: white;
+            font-weight: bold;
+            width: 100%;
+            font-size: 60px; /* Navbarの文字サイズ */
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            color: blue; /* マウスオーバー時に青くなる */
+        }
+        .content {
+            background-color: #3380c8;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .profile, .twitter-container {
+            background-color: lightgreen;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            width: 40%;
+            min-width: 300px;
+        }
+        .footer {
+            background-color: #3380c8;
+            color: white;
+            padding: 10px; 
+            font-size:40px;
+            width: 100%;
+        }
+        .twitter-container {
+            padding: 20px;
+        }
+        #twitter {
+            width: 100%;
+        }
+        .twitter-timeline {
+            width: 100% !important;
+        }
+
+        /* ここから個別に大きくする */
+        h2 {
+            font-size: 50px; /* Profileのタイトルを大きく */
+        }
+        p {
+            font-size: 24px; /* 各プロフィールのテキストを大きく */
+        }
+        strong {
+            font-size: 24px; /* strong部分を少し大きく */
+        }
+
+        /* 画像を横並びにするためのスタイル */
+        .images-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* 画像の間隔 */
+            margin-top: 20px;
+        }
+        .images-container img {
+            width: 45%; /* 各画像の幅を設定 */
+            max-width: 500px; /* 最大幅を設定 */
+            height: auto; /* 高さは自動調整 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html"><div>Home</div></a>
+        <a href="portfolio.html"><div>Portfolio</div></a>
+    </div>
+    <div class="header">
+    </div>
+    <div class="footer">安定してるので、できるだけ拡大せず「PC版サイト」で見てね！</div>
+    <h1 style="color: white;">Portfolio</h1>
+    <div class="content">
+        <div class="profile">
+            <div class="youtube-container">
+                <h2>Dueling DDQN 格ゲーAI</h2>
+                <!-- YouTube 埋め込み -->
+                <iframe width="480" height="270" src="https://www.youtube.com/embed/wqmeoq0IO9g" title="DRLSPS2023 FightingICEにおけるDueling DDQNエージェント" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p><strong>東大松尾研主催の<a style="color:blue" href="https://deeplearning.jp/drl-course-2023sp/">深層強化学習スプリングセミナー2023</a>に参加</p>
+            <p>講義で扱ったDueling DDQNを用いて格ゲーAIを作成。</p>
+            <p>映像のP1が作ったAI</p>
+            <p style="color:blue"><a href="https://github.com/Minogame321/DRL_SPS_FightingICE">Github</a></p>
+            <p>優秀賞ももらう↧</p>
+        <div class="images-container">
+	 <!-- ここで画像a.pngとb.pngを横並びで表示 -->
+            <img src="DRLSP.png" alt="Image A">
+            <img src="DRLSPyusyuu.png" alt="Image B">
+        </div>
+        </div>
+
+       
+
+    </div>
+<div class="content">
+        <div class="profile">
+            <div class="youtube-container">
+                <h2>Unity 2D shooting</h2>
+                <!-- YouTube 埋め込み -->
+<iframe width="480" height="271" src="https://www.youtube.com/embed/BIsuC9a6O4M" title="Unity 2D shooting プレイ映像" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+<p>初めてゲームエンジンを使ってゼロから作ったゲーム
+<p>流行りの生成系AIでキャラクター全部作ったなぁ
+<p>デクス<a href="https://twitter.com/roax_uec19">@roax_uec19</a>と共に作成</p>
+<p><a href="https://drive.google.com/file/d/1ifbNK6gJRCWolLY810g88Qq8qhVkCHWy/view?usp=sharing">プロジェクトファイル</a></p>
+<p><a href="https://github.com/Minogame321/2Dshooting">Github</p></a>
+
+</div>
+
+
+<div class="content">
+        <div class="profile">
+            <div class="youtube-container">
+                <h2>Item Rescue</h2>
+                <!-- YouTube 埋め込み -->
+<iframe width="480" height="271" src="https://www.youtube.com/embed/Fwhusn2Oasg" title="Item Rescue" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+<p>デクス<a href="https://twitter.com/roax_uec19">@roax_uec19</a>と参加した<a href="https://siv3d.github.io/ja-jp/event/gamejam/">Bnscup2023</a>の時に作成</p>
+<p >オブジェクト指向とクラス継承の活用で物理エンジンの導入がとても簡単にできたのが一番の思い出</p>
+<p style="font-size: 16px;">(物理エンジンを使いやすくライブラリ化したデクスには感謝しかない)</p>
+<p>味方を追いかけている大量の敵を倒すと、回復アイテムと爆弾を落としてくれて
+それをうまく使いながら高得点を目指していくゲーム</p>
+<p><a href="https://drive.google.com/file/d/1TxnRP6WJYmzL1yLPOOkrx1CcGZfdPY_D/view?usp=sharing">プロジェクトファイル</a></p>
+<p style="font-size: 16px;">（ビルドにはBulletが必要(<a href="https://qiita.com/tas9n/items/522312d04013f3512f33">ここ</a>を参考)）</p>
+<p><a href="https://github.com/Minogame321/ItemRescue">Github</p></a>
+
+</div>
+</body>
+</html>
